@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "tiny5x3-140";
+  src: url(pages/font/"tiny5x3-140-webfont.woff2") format('woff2');
+  src: url(pages/font/"tiny5x3-140-webfont.woff") format('woff');
+
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(font/"tiny5x3-140-webfont.woff2") format('woff2');
+  src: url(font/"tiny5x3-140-webfont.woff") format('woff');
+
+}
+
+@font-face {
+  font-family: "FT88";
+  src: url(font/"FT88-Regular.woff2") format('woff2');
+  src: url(font/"FT88-Regular.ttf") format('truetype');
+
+}
+
+
+@font-face {
+  font-family: "FT88";
+  src: url(font/"FT88-Bold.woff2") format('woff2');
+  src: url(font/"FT88-Bold.ttf") format('truetype');
+
+}
+
+.div-titre {
+font-size:60px;
+color: white;
+font-style: normal;
+font-weight: bold;
+font-family: "FT88";
+background-color: none;
+overflow: hidden;
+height:100px;
+width: 500px;
+display: inline-block;
+vertical-align:top;
+border-style: none;
+flex: auto;
+margin-left: 10px;
+
+}
+.logo {
+  font-size:60px;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "FT88";
+  background-color: none;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align:top;
+  border-style: none;
+  flex: auto;
+
+  -webkit-animation: flicker 2s infinite;
+}
+
+@-webkit-keyframes flicker
+{
+0% {opacity:0;}
+9% {opacity:0;}
+10% {opacity:.5;}
+13% {opacity:0;}
+20% {opacity:.5;}
+25% {opacity:1;}
+}
+
+#credits{
+font-size:20px;
+color: white;
+font-style: normal;
+font-weight: bold;
+font-family: "FT88";
+
+
+}
+.div-gif {
+font-size:40px;
+color: white;
+background-color: none;
+overflow: hidden;
+height:100px;
+width: 200px;
+display: inline-block;
+vertical-align:top;
+border-style: none;
+flex: auto;
+margin-left: 10px;
+
+}
+
+
+.div-info {
+font-size:20px;
+color: white;
+font-style: normal;
+font-weight: none;
+font-family: "Montserrat", Helvetica;
+background-color: none;
+overflow: hidden;
+height:100px;
+width: 400px;
+display: inline-block;
+vertical-align:top;
+border-style: none;
+flex: auto;
+margin-left: 20px;
+marg
+padding-left: 15px;
+align-content: center;
+
+
+}
+
+.div-cv {
+font-size:30px;
+color: white;
+font-style: normal;
+font-weight: bold;
+font-family: "Montserrat", Helvetica, sans-serif ;
+background-color: none;
+overflow: hidden;
+height:100px;
+width: 300px;
+display: inline-block;
+vertical-align:top;
+border-style: none;
+flex: auto;
+margin-left: 10px;
+
+}
+
+
+
+h1 {
+font-size:50px;
+color: white;
+font-style: nnone;
+font-family: "Montserrat", Helvetica, sans-serif ;
+margin-left: 10px;
+}
+
+img{
+        max-width: 90%;
+        max-height: 90%;
+        display: block;
+        margin-left: 10px;
+      }
+
+
+      .gallerie{
+
+      width:90%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-style: none;
+      color: white;
+      max-width: 1300px;
+      margin: 70px auto 0;
+      padding-top: 20px;
+      background: none;
+
+      }
+
+
+.item{
+  width: 400px;
+  height:300px;
+  margin: 10px;
+  overflow: none;
+  flex-shrink: 0;
+}
+
+.item img{
+  width: 100%;
+  height: auto;
+  transition: transform .1s;
+}
+
+.item img:hover{
+-ms-transform: scale(1.1); /* IE 9 */
+-webkit-transform: scale(1.1); /* Safari 3-8 */
+transform: scale(1.1);
+}
+
+
+a  {
+   animation-duration:  2s;
+   animation-name: clignoter;
+   animation-iteration-count: infinite;
+   transition: none;
+  font-style: normal;
+  color:#FFFFFF;
+}
+@keyframes clignoter {
+  0%   { color:#FFFFFF; }
+  40%   {color:#ff005a; }
+  100% { opacity:#FFFFFF; }
+}
+
+
+
+a:link {
+
+  font-family: "Montserrat", Times, serif;
+  font-weight: normal;
+  color: #FFFFFF ;
+  text-decoration : none;
+}
+a:hover {
+font-family: "Montserrat", Times, serif;
+font-weight: normal;
+color: #FFFFFF ;
+text-decoration : line-through ;
+}
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: fixed;
+	left: 0;
+  top: 20;
+  margin-top: 200px;
+	writing-mode: vertical-lr;
+	text-orientation: mixed;
+	border: none;
+
+  width: 100px;
+  border-style: none;
+  color: white;
+
+}
+.finpage{width:90%;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+border-style: none;
+color: white;
+max-width: 1300px;
+margin: 70px auto 0;
+padding-top: 20px;
+background: none;
+
+}
+
+.slide {
+  animation-duration: 3s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+}
+
+.messagebienvenue{
+  width:100%;
+  font-size:40px;
+  font-family: "FT88", Times, serif;
+  color: #FFFFFF ;
+  margin: 70px auto 0;
+  padding-top: 20px;
+  text-decoration : none;
